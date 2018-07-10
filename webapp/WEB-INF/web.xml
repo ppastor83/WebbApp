@@ -1,0 +1,52 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Hoteles Triana</display-name>
+	
+	
+	<servlet>
+		<servlet-name>MostrarUsuarios</servlet-name>
+		<display-name>MostrarUsuarios</display-name>
+		<description></description>
+		<servlet-class>hotelesTriabna.Servlets.MostrarUsuarios</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DarBajaUsuario</servlet-name>
+		<display-name>DarBajaUsuario</display-name>
+		<description></description>
+		<servlet-class>hotelesTriabna.Servlets.DarBajaUsuario</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Reservas</servlet-name>
+		<display-name>Reservas</display-name>
+		<description></description>
+		<servlet-class>hotelesTriana.Servlets.Reservas</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>VerClientesAct</servlet-name>
+		<display-name>VerClientesAct</display-name>
+		<description></description>
+		<servlet-class>hotelesTriana.Servlets.VerClientesAct</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MostrarUsuarios</servlet-name>
+		<url-pattern>/MostrarUsuarios</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DarBajaUsuario</servlet-name>
+		<url-pattern>/DarBajaUsuario</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Reservas</servlet-name>
+		<url-pattern>/Reservas</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>VerClientesAct</servlet-name>
+		<url-pattern>/VerClientesAct</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
